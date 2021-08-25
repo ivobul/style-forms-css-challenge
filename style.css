@@ -1,0 +1,249 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  background-color: #f0ecec;
+	color: #222;
+	font-family: sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+
+.form {
+	flex-basis: 680px;
+}
+
+/* form title */
+.form-title {
+  background-color: #08cb5b;
+  border-radius: 10px 10px 0 0;
+	color: #fff;
+  padding: 10px 20px 15px;
+}
+
+.form-title h1 {
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+/* form body */
+.form-body {
+  background-color: #fff;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 5px 20px #999;
+  padding: 0 20px 15px;
+}
+
+.account legend {
+	display: block;
+  font-size: 1.25rem;
+	font-weight: bold;
+	padding: 15px 0 10px 205px;
+}
+
+.account div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 4px;
+	padding: 4px 0;
+}
+
+.account label, 
+.account .label-select {
+	flex-basis: 190px;
+	margin: 0 15px 0 0;
+	padding: 5px 0 0;
+	text-align: right;
+}
+
+.account .label-checkbox { 
+  padding-top: 0; 
+  flex-basis: 190px;
+}
+
+/* input fields*/
+.account input:not([type="checkbox"]), 
+.account select {
+  background-color: #fff;
+  border-radius: 6px;
+	border: 1px solid #b4b4b4;
+	flex-basis: 300px;
+	height: 40px;
+	padding: 3px 3px 3px 8px;
+}
+
+.account input:required:focus,
+.account select:required:focus {
+  border: 1px solid rgba(0, 0, 255, 0.705);
+  outline: none;
+}
+
+.birth-section {
+  flex-basis: 300px;
+}
+
+.birth-section .hidden {
+  left: -500em;
+	position: absolute;
+}
+
+.birth-section #birthdate,
+.birth-section #birthmonth {
+  margin-right: 10px;
+}
+
+/* submit */
+.account .submit {
+	padding: 20px 0 20px 205px;
+}
+
+.account .submit input {
+  background-color: #5b08cb;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	height: 50px;
+	font-size: 1.1rem;
+  padding: 0 20px;
+}
+
+.account .submit input:hover {
+  background-color: #360479
+}
+
+.account .submit input:active {
+  background-color: #5b08cb;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .account legend {
+    padding: 15px 0 10px 0;
+    width: 100%;
+  }
+
+  .account div {
+    flex-wrap: wrap;
+  }
+
+  .account label, 
+  .account .label-select {
+    flex-basis: 100%;
+    margin: 0 0 8px 0;
+    text-align: left;
+  }
+
+  .account input:not([type="checkbox"]), 
+  .account select,
+  .account .birth-section {
+    flex-basis: 100%;
+    min-width:0;
+    width: 100%;
+  }
+
+  .birth-section #birthdate,
+  .birth-section #birthmonth {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .account .submit {
+    padding: 20px 0 20px 0;
+  }
+
+  .account .label-checkbox { 
+    padding-top: 8px;
+    flex-basis: 50%;
+  }
+
+  input[type=checkbox] {
+    margin-left: 30px;
+  }
+}
