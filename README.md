@@ -1,3 +1,3 @@
 # Style Forms with CSS
 
-[!preview](design/preview.png)
+![preview](design/preview.png)
