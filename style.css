@@ -102,43 +102,43 @@ body {
 .form-title {
   background-color: #08cb5b;
   border-radius: 10px 10px 0 0;
-	color: #fff;
+  color: #fff;
   padding: 10px 20px 15px;
 }
 
 .form-title h1 {
-	font-size: 1.6rem;
-	font-weight: normal;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
 
 /* form body */
 .form-body {
   background-color: #fff;
-	border-radius: 0 0 10px 10px;
-	box-shadow: 0 5px 20px #999;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 20px #999;
   padding: 0 20px 15px;
 }
 
 .account legend {
-	display: block;
+  display: block;
   font-size: 1.25rem;
-	font-weight: bold;
-	padding: 15px 0 10px 205px;
+  font-weight: bold;
+  padding: 15px 0 10px 205px;
 }
 
 .account div {
   align-items: center;
   display: flex;
   margin-bottom: 4px;
-	padding: 4px 0;
+  padding: 4px 0;
 }
 
 .account label, 
 .account .label-select {
-	flex-basis: 190px;
-	margin: 0 15px 0 0;
-	padding: 5px 0 0;
-	text-align: right;
+  flex-basis: 190px;
+  margin: 0 15px 0 0;
+  padding: 5px 0 0;
+  text-align: right;
 }
 
 .account .label-checkbox { 
@@ -151,10 +151,10 @@ body {
 .account select {
   background-color: #fff;
   border-radius: 6px;
-	border: 1px solid #b4b4b4;
-	flex-basis: 300px;
-	height: 40px;
-	padding: 3px 3px 3px 8px;
+  border: 1px solid #b4b4b4;
+  flex-basis: 300px;
+  height: 40px;
+  padding: 3px 3px 3px 8px;
 }
 
 .account input:required:focus,
@@ -169,7 +169,7 @@ body {
 
 .birth-section .hidden {
   left: -500em;
-	position: absolute;
+  position: absolute;
 }
 
 .birth-section #birthdate,
@@ -179,16 +179,16 @@ body {
 
 /* submit */
 .account .submit {
-	padding: 20px 0 20px 205px;
+  padding: 20px 0 20px 205px;
 }
 
 .account .submit input {
   background-color: #5b08cb;
   border: none;
   color: rgba(255, 255, 255, 0.8);
-	cursor: pointer;
-	height: 50px;
-	font-size: 1.1rem;
+  cursor: pointer;
+  height: 50px;
+  font-size: 1.1rem;
   padding: 0 20px;
 }
 
@@ -200,8 +200,6 @@ body {
   background-color: #5b08cb;
   color: rgba(255, 255, 255, 1);
 }
-
-
 
 @media screen and (max-width: 650px) {
   .account legend {
