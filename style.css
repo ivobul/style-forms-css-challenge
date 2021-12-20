@@ -67,7 +67,6 @@ ul {
 img,
 video {
   max-width: 100%;
-  
 }
 
 img {
@@ -81,8 +80,8 @@ a {
 /* Basic rules */
 body {
   background-color: #f0ecec;
-	color: #222;
-	font-family: sans-serif;
+  color: #222;
+  font-family: sans-serif;
 }
 
 .container {
@@ -95,7 +94,7 @@ body {
 }
 
 .form {
-	flex-basis: 680px;
+  flex-basis: 680px;
 }
 
 /* form title */
